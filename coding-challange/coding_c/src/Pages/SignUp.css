@@ -1,0 +1,86 @@
+.input {
+    padding: 10px;
+}
+
+.register_cont_at {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+
+}
+
+.register_at {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.info_container_at {
+    width: 400px;
+    border: 1px solid #cecece;
+    background-color: rgb(248, 248, 248);
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.registerdetails_at {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerdetails_at div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.title_at {
+    margin-left: 15%;
+    margin-top: 2%;
+    border-bottom: 1px solid #cecece;
+    font-size: 120%;
+
+}
+
+.inp label {
+    margin-bottom: 1%;
+    font-size: 100%;
+    
+}
+
+.inp input {
+    padding: 10px;
+    border: 1px solid #cecece;
+}
+
+.registerbutton_at {
+    margin-top: 3%;
+    color: white;
+    border: none;
+    background-color: rgb(71, 67, 67);
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.registerbutton_at:hover {
+    background-color: rgb(221, 2, 133);
+}
+
+.registermainheading_at {
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
