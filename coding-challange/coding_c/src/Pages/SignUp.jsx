@@ -2,6 +2,7 @@ import React from 'react'
 import "./SignUp.css"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Components/Navbar';
 const SignUp = () => {
     
     const [password,setPassword]=useState("");
@@ -27,6 +28,7 @@ const handleSubmit=(e)=>{
 }
   return (
     <div>
+        <Navbar/>
         <div>
         <div className="register_cont_at">
         <div className="register_at">
@@ -48,7 +50,7 @@ const handleSubmit=(e)=>{
 
                     <div className="inp">
                         <label htmlFor="password_at">Password</label>
-                        <input type="password" className="password_at" required onChange={(e)=>{setPassword(e.target.value)}}/>
+                        <input type="password" className="password_at" required onChange={(e)=>{setPassword(e.target.value)}} minLength="6" />
                     </div>
 
                 </div>

@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from "../context/CartContext"
 import { useContext } from "react";
+import Navbar2 from '../Components/Navbar2'
 
 const OrderSummary = () => {
     const { cart } = useContext(CartContext);
@@ -37,10 +38,26 @@ const OrderSummary = () => {
         setcartitem(data);
         //  console.log(data);
     }
+
+    const handleInc=(id)=>{
+        setcartitem(cartitem=> cartitem.map((item)=>
+            id===item.id ? {...item , quantity:item.quantity + 1}:item
+        ))
+    }
+
+    const handleDec=(id)=>{
+        setcartitem(cartitem=> cartitem.map((item)=>
+        id===item.id ? {...item , quantity:item.quantity - 1}:item
+    ))
+    }
+  
+
     return (
         <div>
+            <Navbar2/>
+            <Link to="/menu"><b> &#x2190; Back</b></Link>
             <div className="cart_atharva">
-                <h2 className="carthead_at">SHOPPING</h2>
+                <h2 className="carthead_at">Order Summary</h2>
                 <div className="cartmaincontainer_at">
                     <div className="showcartproducts_at">
                         <div className="showcartproductshead_at cartheadhead_at" >
@@ -60,8 +77,14 @@ const OrderSummary = () => {
                                             <p>{e.name}</p>
                                             <div className='priceflex'>
                                                 <div>{e.price}</div>
-                                                <div>{1}</div>
-                                                <div>{e.price}</div>
+                                                <div>
+                                                <div>
+                                            <button className='qu' onClick={()=>handleInc(e.id)}>+</button>
+                                            <button className='qu'>{e.quantity}</button>
+                                            <button disabled={e.quantity===1} className='qu' onClick={()=>handleDec(e.id)}>-</button>
+                                        </div>
+                                                </div>
+                                                <div>{e.price * e.quantity}</div>
                                             </div>
 
                                         </div>

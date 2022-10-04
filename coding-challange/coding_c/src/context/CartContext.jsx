@@ -10,7 +10,7 @@ export const CartContextProvider=({children})=>{
 
     }
     const handleRemove=(inc)=>{
-        let x=Math.floor(cart-Number(inc/2))
+        let x=Math.floor(cart-Number(inc))
         if(x<0){
             setCart(0)
         }else{

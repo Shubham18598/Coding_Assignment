@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { useContext } from "react"
 import { Link, useNavigate} from "react-router-dom" 
 import { AuthContext } from '../context/AuthContext'
+import Navbar from '../Components/Navbar'
 
 
 
@@ -55,6 +56,7 @@ const Login = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="loginheader_at"><h4>Customer Login</h4></div>
       <div className="container">
         <div className="loginsection_at">
