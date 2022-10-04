@@ -4,7 +4,7 @@ import { createContext } from "react";
 export const AuthContext=createContext();
 
 export const AuthContextProvider=({children})=>{
-    const [isAuth,setIsAuth]=useState(true);
+    const [isAuth,setIsAuth]=useState(false);
 
     const handleAuth=(state)=>{
         setIsAuth(state)
