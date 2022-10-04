@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     font-family:sans-serif;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 30px 30%;
     text-align: left;
 }
 
@@ -49,9 +49,7 @@ form input{
     justify-content: space-between;
 }
 .logandregiter_at button{
-    /* margin-left:7%; */
     padding: 0%;
-    /* margin-right: 5%; */
     height: 38px;
     width:31%;
     color: white;
@@ -60,7 +58,7 @@ form input{
     cursor: pointer;
 }
 .logandregiter_at button:hover{
-    background-color:rgb(221, 2, 133) ;
+    background-color:rgb(63,81,181) ;
 }
 .login_heading_at{
     cursor:pointer;
@@ -81,7 +79,7 @@ form input{
 }
 .forgotpwd_at:hover {
     /* text-decoration: none; */
-    color:rgb(221, 2, 133);
+    color:rgb(63,81,181);
    
 }
 
