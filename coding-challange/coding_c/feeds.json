@@ -30,19 +30,6 @@
     }
   ],
   "cart": [
-    {
-      "id": 2,
-      "name": "Fries",
-      "price": 100,
-      "image": "https://www.rd.com/wp-content/uploads/2022/03/coke-zero-vs-diet-coke-via-coca-cola.com-via-diet-coke.com-UD.jpg?fit=700,800",
-      "quantity": 1
-    },
-    {
-      "id": 1,
-      "name": "Hamburger",
-      "price": 200,
-      "image": "https://cdn.vox-cdn.com/thumbor/ZHlwQAmZgTKgyj3CurHRlFTJi54=/0x87:1080x627/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/21847420/Original_burger.jpg",
-      "quantity": 1
-    }
+    
   ]
 }
