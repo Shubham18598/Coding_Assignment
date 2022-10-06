@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SignUp.css"
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 const SignUp = () => {
     
@@ -55,6 +55,8 @@ const handleSubmit=(e)=>{
 
                 </div>
                 <button className="registerbutton_at" type='submit' onClick={handleSubmit}>Create An Account</button>
+
+                <Link style={{paddingLeft:"30%"}}  to="/login">Login</Link>
             </div>
             </form>
         </div>
