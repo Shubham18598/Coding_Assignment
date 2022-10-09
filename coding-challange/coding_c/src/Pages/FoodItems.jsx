@@ -7,7 +7,7 @@ import { CartContext } from '../context/CartContext';
 const getData = async (page) => {
     try {
         let res = await fetch(
-            `http://localhost:3004/data`
+            `https://okfsxb.sse.codesandbox.io/data`
         );
 
         let data = await res.json();
@@ -69,7 +69,7 @@ const FoodItems = () => {
                             alert("Product added to cart")
 
                             const data = el;
-                            fetch("http://localhost:3004/cart", {
+                            fetch("https://okfsxb.sse.codesandbox.io/cart", {
                                 method: "POST",
                                 headers: {
                                     "content-type": "application/json"
