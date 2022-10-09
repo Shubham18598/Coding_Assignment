@@ -21,7 +21,7 @@ const OrderSummary = () => {
 
     function handledelete(id) {
         console.log("deleted")
-        fetch(`http://localhost:3004/cart/${id}`, {
+        fetch(`https://okfsxb.sse.codesandbox.io/cart/${id}`, {
             method: 'DELETE'
         }).then((result) => {
             result.json().then((res) => {
@@ -34,7 +34,7 @@ const OrderSummary = () => {
 
 
     async function getData() {
-        const data = await fetch("http://localhost:3004/cart").then(d => d.json());
+        const data = await fetch("https://okfsxb.sse.codesandbox.io/cart").then(d => d.json());
         setcartitem(data);
         //  console.log(data);
     }
@@ -96,7 +96,7 @@ const OrderSummary = () => {
 
                                             handleRemove(e.price);
                                             console.log(e.price)
-                                            fetch(`http://localhost:3004/cart/${e.id}`, {
+                                            fetch(`https://okfsxb.sse.codesandbox.io/cart/${e.id}`, {
                                                 method: "DELETE"
                                             })
                                             getData();
